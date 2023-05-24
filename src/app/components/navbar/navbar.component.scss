@@ -1,0 +1,37 @@
+.toolbaricon{
+  max-width: 25px;
+  max-height: 25px;
+
+}
+.custom-title{
+
+  font-family: 'BrunoAceSC-Regular', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.custom-title1{
+
+  font-family: 'Orbitron-VariableFont_wght', sans-serif;
+  font-weight: bold;
+  color: red;}
+
+.example-spacer{
+  flex: 1 1 auto;
+}
+
+.mat-button.custom-button {
+  color: rgba(247, 245, 245, 0.638); /* Color del texto más tenue */
+  margin-left: 8px; /* Ajuste del margen izquierdo */
+}
+
+mat-toolbar{
+  background-color: black;
+}
+
+.organicetitle{
+  display: flex;
+}
+
+.symbols-outlined{
+ outline: white;
+}

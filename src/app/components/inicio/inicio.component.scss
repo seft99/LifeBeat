@@ -1,0 +1,104 @@
+.inicio-card {
+  width: 100%;
+  max-width: 450px;
+  padding: 16px;
+  max-height: 620px;
+  text-align: center;
+}
+.background {
+  background-image: url('https://www.thesun.co.uk/wp-content/uploads/2022/08/crop-19534445.jpg?strip=all&quality=100&w=1920&h=1080&crop=1');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.body{
+  display: flex;
+  justify-content: left;
+  height: 100%;
+  align-items: left;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  z-index: 1;
+  padding-bottom: 16.5%;
+
+}
+
+.inicio{
+  width: 100%;
+  max-width: 50px;
+  text-align: center;
+
+}
+
+.ancho{
+  width: 80%;
+}
+.mat-form-field {
+  position: relative;
+  z-index: 1;
+
+}
+.button{
+  height: 100px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 15px;
+
+}
+
+h1{
+  font-size: 4rem;
+  font-family: BrunoAceSC Regular;
+
+}
+
+.custom-title{
+  margin-top: 10%;
+  font-size: 2rem;
+  font-family: 'BrunoAceSC-Regular', sans-serif;
+  font-weight: bold;
+}
+
+.organicetitle{
+  display: flex;
+}
+
+.custom-title1{
+  font-family: 'Orbitron-VariableFont_wght', sans-serif;
+  font-weight: bold;
+  color: red;
+}
+.ancho{
+  width: 100%;
+
+}
+.button{
+  height :50px;
+}
+
+.intro-text{
+  margin-top: 6%;
+}
+
+.spinner{
+  margin: 0 auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    color: red;
+}
+
+.inicio-icon{
+  max-width: 25px;
+  max-height: 25px;
+}

@@ -1,0 +1,83 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <mat-toolbar>
+      <b style="color: rgb(7, 7, 7)">Dataset</b>
+    <div class="example-spacer"></div>
+      <a href="https://www.kaggle.com/datasets/aatifashraf/heart-clean?resource=download" target="_blank">
+        <button  mat-raised-button color="warn" >Kaggle</button>
+      </a>
+  </mat-toolbar>
+
+<mat-card class="maincard margin-top body mat-elevation-z5">
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="age">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small">age</th>
+    <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="Sex">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> Sex </th>
+    <td mat-cell *matCellDef="let element"> {{element.Sex}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="ChestPainType">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> ChestPainType</th>
+    <td mat-cell *matCellDef="let element"> {{element.ChestPainType}} </td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="RestingBP">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> RestingBP </th>
+    <td mat-cell *matCellDef="let element"> {{element.RestingBP}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Cholesterol">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> Cholesterol </th>
+    <td mat-cell *matCellDef="let element"> {{element.Cholesterol}} </td>
+  </ng-container>
+
+
+  <ng-container matColumnDef="FastingBS">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small">FastingBS</th>
+    <td mat-cell *matCellDef="let element"> {{element.FastingBS}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Re1ingECG">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> Re1ingECG </th>
+    <td mat-cell *matCellDef="let element"> {{element.Re1ingECG}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="MaxHR">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> MaxHR </th>
+    <td mat-cell *matCellDef="let element"> {{element.MaxHR}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="ExerciseA0gi0a">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> ExerciseA0gi0a</th>
+    <td mat-cell *matCellDef="let element"> {{element.ExerciseA0gi0a}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Oldpeak">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> Oldpeak </th>
+    <td mat-cell *matCellDef="let element"> {{element.Oldpeak}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="ST_Slope">
+    <th mat-header-cell *matHeaderCellDef style="font-size: small"> ST_Slope </th>
+    <td mat-cell *matCellDef="let element"> {{element.ST_Slope}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons>
+</mat-paginator>
+</mat-card>
+
+
+</div>

@@ -1,0 +1,127 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <mat-toolbar class="toolbar-color">
+    <mat-toolbar-row style="display: flex; justify-content: center;">
+      <b style="color: rgb(7, 7, 7)">COMPLETE EL FORMULARIO</b>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+<div>
+  <div class="toolbarbutton">
+  <mat-card class="maincard margin-top body mat-elevation-z5">
+    <form [formGroup]="form"  (ngSubmit)="submitForm()">
+      <mat-grid-list cols="3" rowHeight="70px">
+        <div>
+
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field>
+              <mat-label style="font-size: x-small;">Digite la edad</mat-label>
+              <input matInput type="number" inputmode="numeric" pattern="[0-9]*" formControlName="age" required>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field>
+              <mat-label style="font-size: x-small;">Sexo</mat-label>
+              <mat-select formControlName="Sex" required>
+                <mat-option value="0">Masculino</mat-option>
+                <mat-option value="1">Femenino</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field>
+              <mat-label style="font-size: x-small;">Re1ingECG</mat-label>
+              <mat-select formControlName="ChestPainType" required>
+                <mat-option value="0">ASY</mat-option>
+                <mat-option value="1">ATA </mat-option>
+                <mat-option value="2">NAP </mat-option>
+                <mat-option value="3">TA  </mat-option>
+              </mat-select>
+            </mat-form-field>
+          </mat-grid-tile>
+
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field >
+              <mat-label style="font-size: x-small;">Presion arterial en reposo</mat-label>
+              <input matInput type="number" inputmode="numeric" pattern="[0-9]*" formControlName="RestingBP" required>
+          </mat-form-field>
+      </mat-grid-tile>
+
+
+          <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <mat-form-field >
+                <mat-label style="font-size: x-small;">Colesterol</mat-label>
+                <input matInput type="number" inputmode="numeric" pattern="[0-9]*" formControlName="Cholesterol" required>
+            </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field>
+            <mat-label style="font-size: x-small;">Glucemia en ayunas</mat-label>
+            <mat-select formControlName="FastingBS" required>
+              <mat-option value="0">0</mat-option>
+              <mat-option value="1">1</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-form-field>
+          <mat-label style="font-size: x-small;">Re1ingECG</mat-label>
+          <mat-select formControlName="Re1ingECG" required>
+            <mat-option value="0">Normal</mat-option>
+            <mat-option value="1">ST</mat-option>
+            <mat-option value="2">LVH</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-form-field >
+            <mat-label style="font-size: x-small;">Frecuencia cardiaca maxima</mat-label>
+            <input matInput type="number" inputmode="numeric" pattern="[0-9]*" formControlName="MaxHR" required>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-form-field>
+          <mat-label style="font-size: x-small;">Angina inducida por ejercicio</mat-label>
+          <mat-select formControlName="ExerciseA0gi0a" required>
+            <mat-option value="0">No</mat-option>
+            <mat-option value="1">Si</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-form-field >
+            <mat-label style="font-size: x-small;">Oldpeak</mat-label>
+            <input matInput type="number" inputmode="numeric" pattern="[0-9]*" formControlName="Oldpeak" required>
+        </mat-form-field>
+      </mat-grid-tile>
+
+      <mat-grid-tile [colspan]="1" [rowspan]="1">
+        <mat-form-field>
+          <mat-label style="font-size: x-small;">Pendiente ST ejercicio max</mat-label>
+          <mat-select formControlName="ST_Slope" required>
+            <mat-option value="0">Abajo</mat-option>
+            <mat-option value="1">Plano</mat-option>
+            <mat-option value="2">Arriba</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-grid-tile>
+
+  </div>
+</mat-grid-list>
+
+      <button  mat-raised-button color="warn" class="button-style" [disabled]="form.invalid">Enviar</button>
+    </form>
+  </mat-card>
+
+
+</div>

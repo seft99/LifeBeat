@@ -1,0 +1,35 @@
+.ancho {
+  width: 80%;
+}
+
+.maincard {
+  max-width: 1200px;
+  margin-left: 2.5rem;
+  margin-right: 2.4rem;
+  background: whitesmoke;
+}
+
+::ng-deep{
+  mat-form-field.mat-form-field{
+    background: none;
+  }
+}
+
+.toolbarbutton{
+  margin-top: 30px;
+}
+
+.centerbutton{
+  display: flex;
+
+}
+
+.toolbar-color{
+background-color: none;
+
+}
+
+.button-style{
+    display: flex;
+    width: 100%;
+}
