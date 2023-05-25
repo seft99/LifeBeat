@@ -25,6 +25,8 @@ import { InformacionComponent } from './components/informacion/informacion.compo
 import { CreditosComponent } from './components/creditos/creditos.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatDialogModule} from '@angular/material/dialog';
+import { DialogComponent } from './components/dialog/dialog.component';
 
 
 @NgModule({
@@ -35,7 +37,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     NavbarComponent,
     DatasetComponent,
     InformacionComponent,
-    CreditosComponent
+    CreditosComponent,
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
     MatSelectModule,
     MatTableModule,
     HttpClientModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatDialogModule
 
   ],
   providers: [],

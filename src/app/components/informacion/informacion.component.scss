@@ -1,27 +1,43 @@
-.example-container {
-  height: 400px;
-  width: 550px;
-  max-width: 100%;
-  overflow: auto;
+.maincard{
+  height: 35%;
+  width: 60%;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding-bottom: -10%;
+}
+.maincard1{
+  height: 51%;
+  width: 60%;
+  margin-top: 5px;
+  margin-left: 10px;
+  padding-bottom: -10%;
 }
 
-table {
-  width: 800px;
+.titulo{
+  margin-top: 10px;
+  text-align: center;
+  font-family: fantasy;
+  margin-bottom: -3px;
 }
 
-td.mat-column-star {
-  width: 20px;
-  padding-right: 8px;
+.tam-img{
+  height: 50%;
+  width: 50%;
 }
 
-th.mat-column-position, td.mat-column-position {
-  padding-left: 8px;
+.texto-info{
+  font-size: x-small;
+  margin-left: 20px;
 }
 
-.mat-mdc-table-sticky-border-elem-right {
-  border-left: 1px solid #e0e0e0;
-}
-
-.mat-mdc-table-sticky-border-elem-left {
-  border-right: 1px solid #e0e0e0;
+.background{
+  background-image: url('https://thumbs.dreamstime.com/b/el-doctor-man-stethoscope-84232406.jpg');
+  background-size: cover;
+  background-position: right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
